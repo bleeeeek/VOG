@@ -1,12 +1,12 @@
 import React from 'react';
 import { Element } from 'react-scroll';
-import Header from './components/Header';
-import DonationChart from './components/DonationChart';
-import EventsList from './components/EventsList';
-import EventDetails from './components/EventDetails';
-import PhotoGallery from './components/PhotoGallery';
-import { eventsData } from './data/eventsData';
-import Footer from './components/Footer';
+import Header from './components/Header.jsx';
+import DonationChart from './components/DonationChart.jsx';
+import EventsList from './components/EventsList.jsx';
+import EventDetails from './components/EventDetails.jsx';
+import PhotoGallery from './components/PhotoGallery.jsx';
+import { eventsData } from './data/eventsData.js';
+import Footer from './components/Footer.jsx';
 import VideoCard from './components/VideoCard.jsx';
 
 function App() {

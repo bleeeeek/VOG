@@ -5,19 +5,15 @@ import path from 'path';
 export default defineConfig({
   plugins: [react()],
   base: '/VOG/',
-  root: path.resolve(__dirname),
   build: {
     outDir: 'dist',
-    assetsDir: 'assets',
-    rollupOptions: {
-      input: {
-        app: path.resolve(__dirname, 'index.html')
-      }
-    }
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src')
+      '@': path.resolve(__dirname, './src'),
+      '@assets': path.resolve(__dirname, './src/assets'),
+      '@components': path.resolve(__dirname, './src/components'),
+      '@data': path.resolve(__dirname, './src/data')
     }
   }
 });
