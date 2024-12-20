@@ -5,17 +5,13 @@ import path from 'path';
 export default defineConfig({
   plugins: [react()],
   base: '/VOG/',
+  root: path.resolve(__dirname),
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
     rollupOptions: {
       input: {
-        main: path.resolve(__dirname, 'index.html'),
-      },
-      output: {
-        entryFileNames: '[name].[hash].js',
-        chunkFileNames: '[name].[hash].js',
-        assetFileNames: '[name].[hash].[ext]'
+        app: path.resolve(__dirname, 'index.html')
       }
     }
   },
