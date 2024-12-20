@@ -6,11 +6,10 @@ export default defineConfig({
   base: '/VOG/',
   build: {
     outDir: 'dist',
-    assetsDir: '',
+    assetsDir: 'assets',
     rollupOptions: {
       output: {
-        entryFileNames: 'main.js',
-        assetFileNames: 'assets/[name].[ext]'
+        manualChunks: undefined
       }
     }
   },
