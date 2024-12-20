@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/AVisionOfGood/' // Ensure this matches your repository name
+  base: '/VOG/' // Ensure this matches your repository name
 });
